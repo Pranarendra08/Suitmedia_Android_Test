@@ -1,12 +1,13 @@
 package com.example.suitmediaandroidtest
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.suitmediaandroidtest.adapter.UserAdapter
-import com.example.suitmediaandroidtest.databinding.ActivityMainBinding
 import com.example.suitmediaandroidtest.databinding.ActivityThirdBinding
+import com.example.suitmediaandroidtest.model.ResponseUserList
 
 class ThirdActivity : AppCompatActivity() {
 

@@ -13,6 +13,7 @@ class UserAdapter(private val list: List<ResponseUserList.UserItem>) :
 
     inner class UserItemViewHolder(private val binding : AdapterUserBinding) :
         RecyclerView.ViewHolder(binding.root){
+
         fun bind(item: ResponseUserList.UserItem) {
             with(binding) {
                 item.apply {
@@ -21,10 +22,9 @@ class UserAdapter(private val list: List<ResponseUserList.UserItem>) :
                         .apply(RequestOptions.circleCropTransform())
                         .into(ivUserPhoto)
 
-                    tvNamaUser.text = first_name + last_name
+                    tvNamaUser.text = "$first_name $last_name"
                     tvEmailUser.text = email
                 }
-
             }
         }
     }

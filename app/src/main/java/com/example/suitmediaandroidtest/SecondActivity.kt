@@ -19,11 +19,12 @@ class SecondActivity : AppCompatActivity() {
         binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        initViews()
+        initView()
+
         supportActionBar?.hide()
     }
 
-    private fun initViews() {
+    private fun initView() {
         with(binding) {
             tvNama.text = intent.getStringExtra(EXTRA_NAME)
 

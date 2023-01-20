@@ -5,6 +5,6 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 interface ApiService {
-    @GET("/api/users?page=1")
+    @GET("/api/users")
     fun getListUser(): Call<ResponseUserList>
 }
